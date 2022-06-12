@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 85%;
+  width: 88%;
   margin: 0 15rem;
   padding-block: 5rem;
 }
@@ -17,7 +17,7 @@
 
 .menu__items {
   display: flex;
-  gap: 3.2rem;
+  gap: 4.2rem;
 }
 
 .menu__item {

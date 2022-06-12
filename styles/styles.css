@@ -8,10 +8,15 @@
   --text-color-menu-mobile: #e1e1e6;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1.6rem;
   background: var(--background);
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

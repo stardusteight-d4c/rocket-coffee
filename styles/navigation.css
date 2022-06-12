@@ -1,0 +1,123 @@
+.logo-mobile,
+.menu__toggle,
+.mobile_banner--title, 
+.menu-mobile {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 15rem;
+  padding-block: 5rem;
+}
+
+
+.menu__items {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.menu__item {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 1.9rem;
+  letter-spacing: 0.02em;
+}
+
+.menu__item:hover {
+  text-shadow: 0rem 0.3rem 0.6rem rgba(255, 255, 255, 0.349);
+  cursor: pointer;
+}
+
+.menu__btn {
+  background: transparent;
+  text-transform: uppercase;
+  color: var(--text-color);
+  border: 1px solid var(--button);
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 1.1rem 3.8rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+
+.menu__btn:hover {
+  cursor: pointer;
+  background-color: var(--button);
+  box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.219);
+}
+
+@media screen and (max-width: 750px) {
+  .logo-desktop,
+  .menu__btn, .menu__items {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .menu__toggle {
+    display: block;
+  }
+
+  .menu {
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 3.7rem;
+    border-bottom: 1px solid var(--border-menu-mobile);
+    position: relative;
+  }
+
+  #menuToggle {
+    cursor: pointer;
+    padding: 1.5rem;
+  }
+  
+  .menu__items {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    margin: 0;
+    gap: 0;
+
+    top: -1000px;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .menu__items--active {
+    top: 101%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    height: 100vh;
+  }
+
+
+  .menu__item {
+    background: var(--background);
+    border-bottom: 1px solid #29292E;
+    display: inline-block;
+    width: 100%;
+    padding-block: 2rem;
+    padding-left: 2.5rem;
+  }
+  
+
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+  }
+
+}

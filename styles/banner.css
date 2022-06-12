@@ -1,0 +1,108 @@
+.banner__btn--mobile, .blur-mobile {
+  display: none;
+}
+
+.main__container {
+  position: relative;
+}
+
+.main__container .blur-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.main__container .blur-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
+  font-weight: 700;
+  align-items: center;
+  line-height: 10.9rem;
+}
+
+.banner__content span:nth-child(1) {
+  color: var(--text-color);
+}
+
+.banner__content span:nth-child(2) {
+  color: var(--background);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.banner img {
+  width: 60%;
+}
+
+@media screen and (max-width: 750px) {
+  .blur-1, .main__container .blur-2 {
+    display: none;
+  }
+
+  .banner {
+    padding: 0 0.5rem;
+  }
+
+  .mobile_banner--title {
+    display: block;
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 4.1rem;
+    padding: 8.8rem 4rem;
+  }
+
+  .banner__btn--mobile {
+    display: block;
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--text-color);
+    border: 1px solid var(--button);
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 1.1rem 4.9rem 1.1rem 3.4rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s;
+    margin: auto;
+    position: relative;
+  }
+
+  .banner__btn--mobile::after {
+    content: url(../assets/arrow.svg);
+    position: absolute;
+    right: 2rem;
+  }
+
+  .banner__content {
+    font-size: 5rem;
+    font-weight: 700;
+    align-items: center;
+    line-height: 6.8rem;
+    margin-top: 10.8rem;
+  }
+
+  .banner img {
+    width: 90%;
+  }
+  
+  .blur-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+

@@ -1,0 +1,17 @@
+:root {
+  font-size: 62.5%; /* -> 1rem = 10px | 100% -> 1rem = 16px */
+  --background: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+  background: var(--background);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

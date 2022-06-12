@@ -6,8 +6,21 @@ menuToggle.addEventListener("click", (event) => {
   if (menuOff) {
     itemsMenu.classList.add("menu__items--active");
     menuOff = false;
+    ocultarDiv(".banner__content");
+    ocultarDiv(".blur-mobile");
   } else {
     itemsMenu.classList.remove("menu__items--active");
     menuOff = true;
+    exibirDiv(".banner__content");
+    exibirDiv(".blur-mobile");
   }
 });
+
+const ocultarDiv = (div) => {
+  document.querySelector(`${div}`).style.visibility = 'hidden';
+};
+
+const exibirDiv = (div) => {
+  document.querySelector(`${div}`).style.visibility = 'visible';
+};
+
